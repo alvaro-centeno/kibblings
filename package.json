@@ -1,5 +1,5 @@
 {
-  "name": "kibblings-1",
+  "name": "kibblings",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,19 +8,21 @@
     "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "client": "npm start --prefix client",
     "start": "node server.js",
-    "build": "cd client/ && npm install && npm run build"
+    "build": "cd client/ && npm install && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mnallas/kibblings-1.git"
+    "url": "https://github.com/shakymary/kibblings"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mnallas/kibblings-1/issues"
+    "url": "https://github.com/shakymary/kibblings/issues"
   },
-  "homepage": "https://github.com/mnallas/kibblings-1#readme",
+  "homepage": "http://shakymary.github.io/kibblings",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "axios": "^0.20.0",
@@ -30,6 +32,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "gh-pages": "^3.1.0",
     "jsonwebtoken": "^8.5.1",
     "mdbreact": "^4.27.0",
     "mongoose": "^5.10.1"

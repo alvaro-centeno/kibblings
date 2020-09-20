@@ -85,15 +85,15 @@ const NavBar = () => {
               </Nav.Link>
             </>
           ) : (
-              <>
-                <Nav.Link>
-                  <Login />
-                </Nav.Link>
-                <Nav.Link>
-                  <Register />
-                </Nav.Link>
-              </>
-            )}
+            <>
+              <Nav.Link>
+                <Login />
+              </Nav.Link>
+              <Nav.Link>
+                <Register />
+              </Nav.Link>
+            </>
+          )}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

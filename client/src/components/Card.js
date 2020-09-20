@@ -38,13 +38,19 @@ export const NewPetCard = ({ image, petName, petBreed, children }) => {
     //center content
     <MDBCol className="mt-3 col-md-6 col-sm-12">
       <MDBCard style={{ marginTop: 30, width: "100%" }}>
-        <MDBCardImage src={image} waves style={{
-          maxHeight: "200px",
-          maxWidth: "200px",
-        }} />
+        <MDBCardImage
+          src={image}
+          waves
+          style={{
+            maxHeight: "200px",
+            maxWidth: "200px",
+          }}
+        />
         <MDBCardBody style={{ content: "center" }}>
           <MDBCardTitle style={{ paddingLeft: "20px" }}>{petName}</MDBCardTitle>
-          <MDBCardTitle style={{ paddingLeft: "20px" }}>{petBreed}</MDBCardTitle>
+          <MDBCardTitle style={{ paddingLeft: "20px" }}>
+            {petBreed}
+          </MDBCardTitle>
           {children}
         </MDBCardBody>
       </MDBCard>

@@ -51,8 +51,8 @@ export const BannerTron = (props) => {
         className="text-white text-center py-1 px-4"
         style={{
           backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         }}
       >
         <MDBCardTitle
@@ -63,5 +63,5 @@ export const BannerTron = (props) => {
         </MDBCardTitle>
       </MDBCol>
     </MDBJumbotron>
-  )
-}
+  );
+};

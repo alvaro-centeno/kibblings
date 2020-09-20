@@ -9,10 +9,9 @@ import {
   MDBMask,
   MDBContainer,
 } from "mdbreact";
-import LandingVideo from "./Images/FrenchBulldogLanding2.mp4"
-import LandingVideo2 from "./Images/PlaceHolder1920x1080.mp4"
-import LandingVideo3 from "./Images/CatLanding2.mp4"
-
+import LandingVideo from "./Images/FrenchBulldogLanding2.mp4";
+import LandingVideo2 from "./Images/PlaceHolder1920x1080.mp4";
+import LandingVideo3 from "./Images/CatLanding2.mp4";
 
 //This testing has solved previous children issue, now using MDB
 //Remove MBD Container for HUGE Carousel
@@ -58,8 +57,8 @@ export const CarouselItems = () => {
         </MDBView>
       </MDBCarouselItem>
     </>
-  )
-}
+  );
+};
 
 //The child Testing Here may work using MDB. Double Check logic with Mykhas for Confirmation of logistics
 //Or Rerun after potential post-confirmation Errors
